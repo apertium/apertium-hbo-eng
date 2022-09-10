@@ -36,6 +36,28 @@
     </pipeline>
   </mode>
 
+  <mode name="hbo_conllu-eng">
+    <pipeline>
+      <program name="python3 conllu_to_ap.py"/>
+      <program name="lt-proc -o">
+        <file name="hbo-eng.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="hbo-eng.autolex.bin"/>
+      </program>
+      <program name="python3 add_sl_prefix.py"/>
+      <program name="cg-proc -n">
+        <file name="hbo-eng.cg3.bin"/>
+      </program>
+      <program name="apertium-cleanstream -n"/>
+      <program name="python3 un-clean-stream.py"/>
+      <program name="sed -E 's/&lt;[@#][^&gt;]+&gt;//g'"/>
+      <program name="lt-proc $1">
+        <file name="hbo-eng.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
   <!-- eng → hbo -->
 
   <mode name="eng-hbo" install="yes" gendebug="yes">

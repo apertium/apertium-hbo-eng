@@ -15,7 +15,8 @@ TARGETS_DIR1 =		\
 	$(PREFIX1).autolex.bin	\
 	$(PREFIX1).autogen.bin	\
 	$(PREFIX1).autopgen.bin	\
-	$(PREFIX1).rtx.bin
+	$(PREFIX1).rtx.bin \
+	$(PREFIX1).cg3.bin
 
 TRIMMED_TARGETS_DIR1 = \
 	$(PREFIX1).automorf.bin
@@ -163,6 +164,9 @@ $(PREFIX1).rtx.bin: $(BASENAME).$(PREFIX1).rtx
 
 $(PREFIX2).rtx.bin: $(BASENAME).$(PREFIX2).rtx
 	rtx-comp $< $@
+
+$(PREFIX1).cg3.bin: $(BASENAME).$(PREFIX1).cg3
+	cg-comp $< $@
 
 ###############################################################################
 ## Postgeneration dictionaries

@@ -12,6 +12,7 @@
     <sdef n="vaux"            c="Auxiliary verb"/>
     <sdef n="vbser"           c="'To be' verb"/>
     <sdef n="vbhaver"         c="'To have' verb"/>
+    <sdef n="v"               c="verb"/>
     <sdef n="cnjsub"          c="Subordinating conjunction"/>
     <sdef n="cnjcoo"          c="Co-ordinating conjunction"/>
     <sdef n="cnjadv"          c="Adverbial conjunction"/>
@@ -100,6 +101,17 @@
       <!-- example:
            <e><p><l>house<s n="n"/></l><r>casa<s n="n"/><s n="f"/></r></p></e>
       -->
+
+      <e><p><l>ב<s n="pr"/></l><r>in<s n="pr"/></r></p></e>
+      <e><p><l>ראשׁית<s n="n"/><s n="f"/></l><r>beginning<s n="n"/></r></p></e>
+      <e><p><l>ברא<s n="v"/></l><r>create<s n="vblex"/></r></p></e>
+      <e><p><l>אלהים<s n="n"/><s n="m"/><s n="pl"/></l><r>God<s n="np"/><s n="al"/><s n="sg"/></r></p></e>
+      <e><p><l>את<s n="pr"/></l><r>with<s n="pr"/></r></p></e>
+      <e><p><l>ה<s n="det"/><s n="def"/></l><r>the<s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+      <e><p><l>שׁמים<s n="n"/><s n="m"/></l><r>sky<s n="n"/></r></p></e>
+      <e><p><l>ו<s n="cnjcoo"/></l><r>and<s n="cnjcoo"/></r></p></e>
+      <e><p><l>ארץ<s n="n"/><s n="f"/></l><r>ground<s n="n"/></r></p></e>
+      <e><p><l>׃<s n="sent"/></l><r>.<s n="sent"/></r></p></e>
 
       <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
       <e><re>,</re>          <p><l><s n="cm"/></l>  <r><s n="cm"/></r></p></e>

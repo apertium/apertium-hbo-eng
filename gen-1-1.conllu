@@ -1,0 +1,20 @@
+# sent_id = Masoretic-Genesis-1:1-hbo
+# text = בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַשָּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ׃
+# checker = Daniel
+1-2	בְּרֵאשִׁ֖ית	_	_	_	_	_	_	_	_
+1	_	ב	ADP	prep	_	2	case	_	Ref=GEN_1.1
+2	_	ראשׁית	NOUN	subs	Gender=Fem|Number=Sing	3	obl	_	Ref=GEN_1.1
+3	בָּרָ֣א	ברא	VERB	verb	Aspect=Perf|Gender=Masc|HebBinyan=PAAL|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin	0	root	_	Ref=GEN_1.1
+4	אֱלֹהִ֑ים	אלהים	NOUN	subs	Gender=Masc|Number=Plur	3	nsubj	_	Ref=GEN_1.1
+5	אֵ֥ת	את	ADP	prep	_	7	case	_	Ref=GEN_1.1
+6-7	הַשָּׁמַ֖יִם	_	_	_	_	_	_	_	_
+6	_	ה	DET	art	PronType=Art	7	det	_	Ref=GEN_1.1
+7	_	שׁמים	NOUN	subs	Gender=Masc|Number=Plur	3	obj	_	Ref=GEN_1.1
+8-9	וְאֵ֥ת	_	_	_	_	_	_	_	_
+8	_	ו	CCONJ	conj	_	11	cc	_	Ref=GEN_1.1
+9	_	את	ADP	prep	_	11	case	_	Ref=GEN_1.1
+10-11	הָאָֽרֶץ	_	_	_	_	_	_	_	SpaceAfter=No
+10	_	ה	DET	art	PronType=Art	11	det	_	Ref=GEN_1.1
+11	_	ארץ	NOUN	subs	Gender=Fem|Number=Sing	7	conj	_	Ref=GEN_1.1
+12	׃	׃	PUNCT	punct	_	3	punct	_	Ref=GEN_1.1
+

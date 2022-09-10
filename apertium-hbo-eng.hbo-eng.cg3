@@ -1,0 +1,19 @@
+DELIMITERS = "<׃>" ;
+
+LIST Person = p1 p2 p3 ;
+LIST Gender = m f mf ;
+LIST Number = sg pl sp ;
+
+SECTION
+
+REMCOHORT ("<את>" pr @case) ((p (@obj)) OR (p (@conj) LINK p (@obj))) ;
+
+MOVE WITHCHILD (*) (@nsubj) BEFORE (pl (*)) ;
+
+SECTION
+
+ADDCOHORT ("<had>" "have" vbhaver past) BEFORE (vblex actv perf) ;
+SUBSTITUTE (actv perf) (pp) (vblex actv perf) ;
+SUBSTITUTE Person (*) (vblex pp) ;
+SUBSTITUTE Gender (*) (vblex pp) ;
+SUBSTITUTE Number (*) (vblex pp) ;
