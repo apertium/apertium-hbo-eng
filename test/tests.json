@@ -1,0 +1,10 @@
+{
+    "hbo-eng": {
+        "input": "hbo-eng-input.txt",
+        "mode": "hbo-eng"
+    },
+    "eng-hbo": {
+        "input": "eng-hbo-input.txt",
+        "mode": "eng-hbo"
+    }
+}
